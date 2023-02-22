@@ -457,7 +457,7 @@ h3 {
     display: grid;
     gap: 1;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "estudio perfil perfil" "vacio experiencia experiencia";
+    grid-template-areas: "estudio perfil perfil" "estudio experiencia experiencia";
     padding-bottom: 1rem;
   }
   .principal__contenedor {
@@ -475,6 +475,12 @@ h3 {
   -webkit-box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
   -moz-box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
   box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.estudios--foto__contenedor {
+  display: none;
 }
 .estudios__titulo {
   margin-bottom: 3rem;
@@ -497,6 +503,32 @@ h3 {
 }
 .estudios--info__contenedor {
   text-align: center;
+}
+@media (min-width: 768px) {
+  .estudios--foto__contenedor {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .estudios__foto {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+  }
+  .estudios__foto--img {
+    height: 100%;
+    position: absolute;
+    width: auto;
+  }
+  .estudios__foto--img:hover {
+    transition: 1.3s;
+    scale: 1.1;
+    filter: grayscale(100%);
+  }
 }
 
 /*Seccion Experiencia*/

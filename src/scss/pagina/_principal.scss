@@ -14,7 +14,7 @@
         &__grid{
             @include m.grid(3,1);
             grid-template-areas: "estudio perfil perfil"
-                                "vacio experiencia experiencia";
+                                "estudio experiencia experiencia";
             padding-bottom: 1rem;
 
         }

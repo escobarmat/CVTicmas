@@ -12,6 +12,12 @@
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    &--foto__contenedor{
+        display: none;
+    }
     &__titulo{
         margin-bottom: 3rem;
         color: v.$gris-claro;
@@ -37,5 +43,34 @@
         &__contenedor{
             text-align: center;
         }
+    }
+    @include m.tablet{
+        &--foto{
+            &__contenedor{
+                display: flex;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+        &__foto{
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            border-radius: 10px;
+            position: relative;
+            &--img{
+                height: 100%;
+                position: absolute;
+                width: auto;
+                &:hover{
+                    transition: 1.3s;
+                    scale: 1.1;
+                    filter: grayscale(100%);
+                }
+            }
+        }
+
     }
 }
