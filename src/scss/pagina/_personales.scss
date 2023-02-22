@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/*Seccion Personales*/
+
+.personales{
+    grid-area: personales;
+    background-color: darken(v.$gris-claro, 10%);
+    margin: 2rem;
+    padding: 3rem;
+    border-radius: 10px;
+    color: v.$verde-azul;
+    -webkit-box-shadow: 0px 0px 11px 5px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 11px 5px rgba(0,0,0,1);
+    box-shadow: 0px 0px 11px 5px rgba(0,0,0,1);
+    text-shadow: 2px 2px 0 v.$blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--datos{
+        font-size: 2rem;
+        &__contenedor{
+            text-align: start;
+        }
+        & strong{
+            color: darken(v.$verde-agua, 5%);
+
+        }
+    }
+    &--titulo{
+        color: darken(v.$verde-azul, 5%);
+    }
+    @include m.tablet{
+        margin: 2rem auto;       
+        padding: 2rem 3rem;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,500;1,300;1,600&family=Roboto+Slab:wght@500;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/build/css/app.css">
+    <script src="/build/js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__grid">
+            <h1 class="header__nombre"></h1>
+            <img class="header__imagen" src="" alt="imagen persona CV">
+            <section class="personales"></section>
+            <nav class="navegacion">
+                <ul class="navegacion__contenedor">
+                    <li class="navegacion__enlace"><a href="#estudios">Estudios</a></li>
+                    <li class="navegacion__enlace"><a href="#perfil">Perfil</a></li>
+                    <li class="navegacion__enlace"><a href="#experiencia">Experiencia</a></li>
+                    <li class="navegacion__enlace"><a href="#habilidades">Habilidades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="principal__grid">
+        <aside data-aos="fade-right" class="estudios" id="estudios">
+            <h2 class="estudios__titulo">Estudios Cursados</h2>
+            <article class="estudios--nivel__contenedor">
+                <h3 class="estudios--nivel__titulo">Estudios Primarios</h3>
+                <ul class="estudios--info__contenedor">
+                    <li class="estudios--info estudios--info__lugar"><strong>Lugar:</strong> Escuela Primaria</li>
+                    <li class="estudios--info estudios--info__cursado"><strong>Cursado:</strong> 2000-2010</li>
+                </ul>
+            </article>
+            <article class="estudios--nivel__contenedor">
+                <h3 class="estudios--nivel__titulo">Estudios Secundarios</h3>
+                <ul class="estudios--info__contenedor">
+                    <li class="estudios--info estudios--info__lugar"><strong>Lugar:</strong> Escuela Secundaria</li>
+                    <li class="estudios--info estudios--info__diploma"><strong>Título:</strong> Técnico</li>
+                    <li class="estudios--info estudios--info__cursado"><strong>Cursado:</strong> 2010-2013</li>
+                </ul>
+            </article>
+            <article class="estudios--nivel__contenedor">
+                <h3 class="estudios--nivel__titulo">Estudios Universitarios</h3>
+                <ul class="estudios--info__contenedor">
+                    <li class="estudios--info estudios--info__lugar"><strong>Lugar:</strong> Universidad Tecnológica</li>
+                    <li class="estudios--info estudios--info__diploma"><strong>Título:</strong> Ingeniero</li>
+                    <li class=" estudios--info estudios--info__cursado"><strong>Cursado:</strong> 2013-En Curso</li>
+                </ul>
+            </article>
+        </aside>
+        <div class="principal__contenedor">
+            <section class="perfil" id="perfil">
+                <h2 class="perfil__titulo">Perfil Profesional</h2>
+                <p class="perfil__descripcion">Programador con más de cinco años de experiencia generando código para empresas del sector bancario. Creé el nuevo portal web de Santander, el cual recibe más de 1 millón de visitas al día. Los errores reportados en los micrositios del banco se redujeron en un 20% y la retención de usuarios incrementó en un 10%. Especialista en solución de problemas y trabajo en equipo.</p>
+                <div class="perfil--boton__contenedor">
+                    <button class="perfil__boton">Ver Detalle</button>
+                </div>
+            </section> 
+            <section id="experiencia" class="experiencia">
+                <h2 class="experiencia__titulo">Experiencia Laboral</h2>
+                <div data-aos="flip-left" class="experiencia--div__contenedor">
+                    <h3 class="experiencia--div__titulo">Programador Web</h3>
+                    <p class="experiencia--datos experiencia--datos__lugar"><strong>Banco Santander</strong></p>
+                    <p class="experiencia--datos experiencia--datos__fecha">Agosto 2017– Diciembre 2019</p>
+                    <ul class="experiencia--descripcion">
+                        <li class="experiencia--descripcion__texto">Escribí el código una página web con la capacidad de recibir a más de un millón de usuarios diariamente.</li>
+                        <li class="experiencia--descripcion__texto"> Responsable de crear un comparador de tarjetas de crédito que elevó las ventas de producto en un 15%.</li>
+                        <li class="experiencia--descripcion__texto">Desarrollé una aplicación bancaria especializada en seguros de auto la cual recibió una calificación de 4.8 estrellas.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div data-aos="flip-left" class="experiencia--div__contenedor">
+                    <h3 class="experiencia--div__titulo">Desarrollador Web</h3>
+                    <p class="experiencia--datos experiencia--datos__lugar"><strong>Flame Analytics</strong></p>
+                    <p class="experiencia--datos experiencia--datos__fecha">Enero 2016 - Agosto 2017</p>
+                    <ul class="experiencia--descripcion">
+                        <li class="experiencia--descripcion__texto">A lo largo de mi estancia, participé en más de 15 proyectos digitales y colaboré con un equipo de diseñadores, copywriters creativos, project managers y Q&A testers.</li>
+                        <li class="experiencia--descripcion__texto">Reduje el porcentaje de errores mensuales de la página de inicio del portal de la compañía en un 10%.</li>
+                        <li class="experiencia--descripcion__texto">Como parte del comité de mejoras continuas de la empresa, colaboré para optimizar los tiempos de carga de la página web en un 15%.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>        
+    </div>
+    <section id="habilidades" class="habilidades">
+        <h2 class="habilidades__titulo">Habilidades</h2>
+        <div class="habilidades__contenedor">
+            <p class="habilidades__texto">Dominio de PHP, MySQL, HTML5, CSS3 y Javascript
+            Conocimiento de las bases de datos MySQL, PostgreSQL
+            Capacidad de liderazgo y trabajo en equipo</p>
+        </div>
+        <ul class="habilidades--iconos">
+            <li class="habilidades__icono"><i class="fa-brands fa-html5"></i></li>
+            <li class="habilidades__icono"><i class="fa-brands fa-css3-alt"></i></li>
+            <li class="habilidades__icono"><i class="fa-brands fa-js"></i></li>
+            <li class="habilidades__icono"><i class="fa-brands fa-node"></i></li>
+            <li class="habilidades__icono"><i class="fa-brands fa-php"></i></li>
+        </ul>
+    </section>
+    <section id="modal" class="modal modal__ocultar"></section>
+    <footer class="footer">
+        <p class="footer__copy">Derechos Reservados &copy; Matias Escobar</p>
+        <nav class="navegacion--footer">
+            <ul class="navegacion--footer__contenedor">
+                <li class="navegacion--footer__enlace"><a href="#estudios">Estudios</a></li>
+                <li class="navegacion--footer__enlace"><a href="#perfil">Perfil</a></li>
+                <li class="navegacion--footer__enlace"><a href="#experiencia">Experiencia</a></li>
+                <li class="navegacion--footer__enlace"><a href="#habilidades">Habilidades</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

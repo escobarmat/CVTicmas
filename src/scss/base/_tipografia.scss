@@ -1,0 +1,18 @@
+// @use 'variables' as v;
+// @use 'mixins' as m;
+
+// h1, h2, h3 {
+// }
+/*Tipografia*/
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.6rem!important;
+}
+h3 {
+    font-size: 3rem!important;
+}
+.text-center {
+    text-align: center;
+}

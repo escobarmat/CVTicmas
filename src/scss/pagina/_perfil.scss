@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/*Seccion Perfil*/
+.perfil{
+    grid-area: perfil;
+    margin: 4rem 2rem;
+    padding: 2rem 4rem;
+    background-color: v.$gris-claro;
+    border-radius: 10px;
+    border: 1px solid lighten(v.$gris, 25%);
+    cursor: pointer;
+    &__titulo{
+        margin-bottom: 2rem;
+    }
+    &__boton{
+        @include m.boton(lighten(v.$verde-agua, 12%),v.$gris-claro);
+        text-transform: uppercase;
+        border-radius: 1rem;
+    }
+    &__descripcion{
+        padding-bottom: 2rem;
+    }
+
+    @include m.tablet{
+        &__titulo{
+            margin-bottom: 4rem;
+            padding-top: 2rem;
+            color: v.$verde-azul;
+        }
+        &__descripcion{
+            padding: 0 6rem;
+            padding-bottom: 2rem;
+        }
+        &__boton{
+            width: 50%;
+        }
+        &--boton{
+            &__contenedor{
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+        }
+
+    }
+}

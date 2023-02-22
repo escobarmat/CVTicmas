@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/*Seccion Experiencia*/
+
+.experiencia{
+    grid-area: experiencia;
+    border: 10px dotted v.$gris-claro;
+    padding: 2rem 2rem;
+    &__titulo{
+        background-color: lighten(v.$verde-agua, 55%);
+        width: fit-content;
+        margin: 1rem auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    @include m.tablet{
+        padding: 3rem 4rem;
+    }
+    &--div{
+        &__contenedor{
+            background-color: lighten(v.$marron_claro, 12%);
+            padding: 1rem 2rem;
+            margin: 2rem;
+            -webkit-box-shadow: -21px 16px 35px -16px rgba(0,0,0,1);
+            -moz-box-shadow: -21px 16px 35px -16px rgba(0,0,0,1);
+            box-shadow: -21px 16px 35px -16px rgba(0,0,0,1);
+        }
+        &__titulo{
+            color: darken(v.$marron_claro, 65%);
+        }
+    }
+}

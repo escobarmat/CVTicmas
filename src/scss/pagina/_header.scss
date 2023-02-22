@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/*Seccion Header*/
+
+.header{
+    background-image:  -webkit-image-set(url(../img/fondo-01.webp) 1x, url(../img/fondo-01.avif) 1x, url(../img/fondo-01.jpg) 1x);
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+
+    @include m.tablet{
+        &__grid{
+            @include m.grid(2,1);
+            grid-template-areas: "titulo titulo"
+                                "foto personales"     
+                                "navegacion personales";     
+        }
+        &__nombre{            
+            grid-area: titulo;
+            font-family: v.$fuente_principal;
+        }
+        &__imagen{
+            grid-area: foto;
+        }
+    }
+
+    &__grid{
+        text-align: center;
+    }
+
+    &__nombre{
+        backdrop-filter: blur(10px); 
+        margin: 3rem auto;
+        padding: 0 1rem;          
+        color: darken(v.$verde-azul, 10%);
+        text-shadow: 0 0 0 v.$blanco;
+        font-size: 6rem;
+        font-weight: 900;  
+    }
+    &__imagen{
+        margin: 2rem auto;
+        width: 20rem;
+        border-radius: 45%;
+        -webkit-box-shadow: 0px 0px 11px 5px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 11px 5px rgba(0,0,0,1);
+        box-shadow: 0px 0px 11px 5px rgba(0,0,0,1);
+    }
+}

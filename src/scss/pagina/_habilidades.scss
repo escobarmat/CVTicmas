@@ -1,0 +1,71 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/*Seccion Habilidades*/
+
+.habilidades{
+    padding-top: 4rem;
+    background-color: v.$gris-claro;
+
+    @include m.tablet{
+        &--iconos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+        &__icono{
+            & i{
+                font-size: 8rem;
+            }
+        }
+        &__texto{
+            margin-left: 4rem;
+            margin-right: 4rem;
+            width: 70%;
+            text-align: center;
+            font-size: 2.2rem;
+        }
+        &__contenedor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__titulo{
+        margin-bottom: 2rem;
+        color: v.$verde-azul;
+    }
+    &--iconos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        text-shadow: 2px 2px v.$negro;
+    }
+    &__icono{
+        font-size: 4rem;
+    }
+    &__texto{
+        margin: auto 2rem;
+    }
+}
+.fa{
+    &-html5{
+        color: v.$html;
+    }
+    &-css3-alt{
+        color: v.$css;
+    }
+    &-js{
+        color: v.$js;   
+    }
+    &-node{
+        color: v.$node;
+    }
+    &-php{
+        color: v.$php;
+    }
+}

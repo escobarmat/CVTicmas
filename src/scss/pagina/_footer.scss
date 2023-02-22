@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/*Seccion Footer*/
+
+.footer{
+    margin: 4rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid v.$gris;
+    display: flex;
+    flex-direction: column-reverse;
+    &__copy{
+        text-align: end;
+        margin-top: 3rem;
+    }
+    @include m.tablet{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}

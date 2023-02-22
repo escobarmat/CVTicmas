@@ -1,0 +1,62 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/*Seccion Modal*/
+.modal{
+    height: 100%;
+    background-color: rgba(#000000, .3);
+    align-items: center;
+    
+    &__ocultar{
+        display: none;
+    }
+    &__mostrar{
+        display: flex!important;
+        position: fixed;
+        top:0;
+        left: 0;
+    }
+    &__contenedor{
+        background-color: lighten(v.$verde-azul, 60%);
+        position: relative;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    &__cierre{
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        font-size: 2rem;
+        color: v.$negro;
+        cursor: pointer;
+        display: flex;
+        justify-content: end;
+    }
+    &__titulo{
+        color: v.$verde-azul;
+    }
+    &__descripcion{
+        text-align: center;
+    }
+    @include m.desktop{
+        &__titulo{
+            padding-top: 3rem;
+            margin: 0;
+            font-size: 4.5rem!important;
+        }
+        &__contenedor{
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             gap: 3rem;
+             margin: 0 1rem;
+        }
+        &__descripcion{
+            padding-bottom: 3rem;
+            font-size: 2.5rem;
+            margin: 0 4rem;
+        }
+    }
+}
