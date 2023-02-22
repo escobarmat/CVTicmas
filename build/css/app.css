@@ -551,8 +551,8 @@ h3 {
 }
 .experiencia--div__contenedor {
   background-color: #f4d6a4;
-  padding: 1rem 2rem;
-  margin: 2rem;
+  padding: 1rem 1rem;
+  margin: 0.5rem;
   -webkit-box-shadow: -21px 16px 35px -16px rgb(0, 0, 0);
   -moz-box-shadow: -21px 16px 35px -16px rgb(0, 0, 0);
   box-shadow: -21px 16px 35px -16px rgb(0, 0, 0);
