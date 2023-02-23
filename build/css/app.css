@@ -397,10 +397,11 @@ h3 {
   backdrop-filter: blur(10px);
   margin: 3rem auto;
   padding: 0 1rem;
-  color: #1c2f2f;
-  text-shadow: 0 0 0 #FFFFFF;
+  color: #151d2a;
+  text-shadow: 1px 1px 30px #FFFFFF;
   font-size: 6rem;
   font-weight: 900;
+  border-radius: 10px;
 }
 .header__imagen {
   margin: 2rem auto;
